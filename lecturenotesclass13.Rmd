@@ -28,6 +28,8 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
 ```{r packages}
 library(tidyverse)
 library(infer)
+library(usethis)
+use_git_config(user.name= "claybaker99", user.email="crb75@duke.edu")
 ```
 
 ## Big picture
@@ -104,7 +106,7 @@ as the "best guess", or estimate, for the population parameter.
 
 
 Suppose we were interested in the population mean. What would be natural
-point estimate to use?
+point estimate to use? Mean
 
 
 | Quantity           | Parameter  | Statistic   |
@@ -116,7 +118,7 @@ point estimate to use?
 | Proportion         | $p$        | $\hat{p}$   |
 
 
-What is the downside to using point estimates?
+What is the downside to using point estimates? You are not always going to capture the true value with a point estimate. 
 
 ## Confidence intervals
 
@@ -145,7 +147,7 @@ estimate. One type of interval estimate is known as a **confidence interval**.
 Suppose you randomly sample 50 students and 5 of them are left handed. If you 
 were to take another random sample of 50 students, how many would you expect 
 to be left handed? Would you be surprised if only 3 of them were left handed? 
-Would you be surprised if 40 of them were left handed?
+Would you be surprised if 40 of them were left handed? 3 is much closer to 5, so I would not be surprised (being left handed is rare); however, a change to 40 would be very surprising and indicate a lot of variability.
 
 ## Quantifying the variability of a sample statistic
 
